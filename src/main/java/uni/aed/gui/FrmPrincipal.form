@@ -4,7 +4,7 @@
   <NonVisualComponents>
     <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
       <SubComponents>
-        <Menu class="javax.swing.JMenu" name="jMenu1">
+        <Menu class="javax.swing.JMenu" name="menuSearchSort">
           <Properties>
             <Property name="text" type="java.lang.String" value="Search &amp; Sort Methods"/>
           </Properties>
@@ -27,7 +27,7 @@
             </MenuItem>
           </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu2">
+        <Menu class="javax.swing.JMenu" name="menuLinkedList">
           <Properties>
             <Property name="text" type="java.lang.String" value="LinkedList"/>
           </Properties>
@@ -37,10 +37,25 @@
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Ctrl+L"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Single LinkedList"/>
+                <Property name="text" type="java.lang.String" value="SingleLinkedList"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItemSingleLinkedListActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="menuTareaEP">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Tarea EP"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="menuItemHeapSort">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Heap Sort"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItemHeapSortActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>

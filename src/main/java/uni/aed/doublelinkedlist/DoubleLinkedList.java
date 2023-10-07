@@ -93,17 +93,6 @@ public class DoubleLinkedList {
             
     }
     
-    public String toString2() {
-        Node current = head;
-        String strList = "";
-        while (current != null) {
-            strList += "->"  + current.data;
-            current = current.next;
-        }
-        
-        return strList;
-    }
-    
     public String toString() {
         Node current = head;
         String strList = "";

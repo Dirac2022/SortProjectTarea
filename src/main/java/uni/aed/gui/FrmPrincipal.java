@@ -27,15 +27,17 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
+        menuSearchSort = new javax.swing.JMenu();
         mDataSimple = new javax.swing.JMenuItem();
         mDataObject = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
+        menuLinkedList = new javax.swing.JMenu();
         menuItemSingleLinkedList = new javax.swing.JMenuItem();
+        menuTareaEP = new javax.swing.JMenu();
+        menuItemHeapSort = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jMenu1.setText("Search & Sort Methods");
+        menuSearchSort.setText("Search & Sort Methods");
 
         mDataSimple.setText("Data Simple");
         mDataSimple.addActionListener(new java.awt.event.ActionListener() {
@@ -43,7 +45,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
                 mDataSimpleActionPerformed(evt);
             }
         });
-        jMenu1.add(mDataSimple);
+        menuSearchSort.add(mDataSimple);
 
         mDataObject.setText("Data Object");
         mDataObject.addActionListener(new java.awt.event.ActionListener() {
@@ -51,22 +53,34 @@ public class FrmPrincipal extends javax.swing.JFrame {
                 mDataObjectActionPerformed(evt);
             }
         });
-        jMenu1.add(mDataObject);
+        menuSearchSort.add(mDataObject);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(menuSearchSort);
 
-        jMenu2.setText("LinkedList");
+        menuLinkedList.setText("LinkedList");
 
         menuItemSingleLinkedList.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        menuItemSingleLinkedList.setText("Single LinkedList");
+        menuItemSingleLinkedList.setText("SingleLinkedList");
         menuItemSingleLinkedList.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuItemSingleLinkedListActionPerformed(evt);
             }
         });
-        jMenu2.add(menuItemSingleLinkedList);
+        menuLinkedList.add(menuItemSingleLinkedList);
 
-        jMenuBar1.add(jMenu2);
+        jMenuBar1.add(menuLinkedList);
+
+        menuTareaEP.setText("Tarea EP");
+
+        menuItemHeapSort.setText("Heap Sort");
+        menuItemHeapSort.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItemHeapSortActionPerformed(evt);
+            }
+        });
+        menuTareaEP.add(menuItemHeapSort);
+
+        jMenuBar1.add(menuTareaEP);
 
         setJMenuBar(jMenuBar1);
 
@@ -102,6 +116,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
         FrmLinkedList frame = new FrmLinkedList();
         frame.setVisible(true);
     }//GEN-LAST:event_menuItemSingleLinkedListActionPerformed
+
+    private void menuItemHeapSortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemHeapSortActionPerformed
+        FrmHeapSort frame = new FrmHeapSort();
+        frame.setVisible(true);
+    }//GEN-LAST:event_menuItemHeapSortActionPerformed
 
     /**
      * @param args the command line arguments
@@ -139,11 +158,13 @@ public class FrmPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem mDataObject;
     private javax.swing.JMenuItem mDataSimple;
+    private javax.swing.JMenuItem menuItemHeapSort;
     private javax.swing.JMenuItem menuItemSingleLinkedList;
+    private javax.swing.JMenu menuLinkedList;
+    private javax.swing.JMenu menuSearchSort;
+    private javax.swing.JMenu menuTareaEP;
     // End of variables declaration//GEN-END:variables
 }
